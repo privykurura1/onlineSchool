@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        html,body{
+            color: #0b2e13;
+            background: #b715f4;
+            font: normal 15px "Helvetica Neue",Arial, Helvetica, Geneva, sans-serif;
+        }
+        p{
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        h1{
+            font-family: 'sans-serif';
+            font-weight: bold;
+            color: #444;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-weight: 300;
+            color: #444;
+            font-size: 55px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 30px;
+            color: #444;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #444;
+
+        }
+        a:hover{
+            color: #02b8dd;
+        }
+        .clear{
+            clear: both;
+        }
+        header{
+            height: 120px;
+        }
+        header nav{
+            float: right;
+        }
+
+
+    </style>
+
+</head>
+<body>
+{% extends "myblogs/base.html" %}
+{% block content %}
+    <h3><p>You have been logged out. Thank you for visiting!</p></h3>
+{% endblock content %}
+</body>
+</html>
