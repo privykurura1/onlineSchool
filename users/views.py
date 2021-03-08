@@ -16,7 +16,7 @@ def register(request):
             new_user.is_mentor = form.cleaned_data.get('is_mentor')
             new_user.level = form.cleaned_data.get('level')
             new_user.save()
-            user = authenticate(username=new_user.username, password=new_user.raw_password)
+            new_user = authenticate(username=new_user.username, password=new_user.raw_password)
             login(request, new_user)
             return redirect('myblogs:home')
     else:
